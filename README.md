@@ -1,59 +1,158 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Teste Learn Commit
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Projeto de aprendizado com Laravel. Explore, aprenda e pratique com Git commits!
 
-## About Laravel
+## ✨ Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- 🎓 **Aprendizado Prático** - Exercícios guiados com commits
+- 🔄 **Histórico Git** - Acompanhe mudanças e commits
+- 🧪 **Testes Completos** - PHPUnit e testes integrados
+- ⚡ **Stack Moderno** - Laravel 10+ com PHP 8.1+
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Laravel 10+** - Framework PHP moderno
+- **PHP 8.1+** - Linguagem servidor
+- **MySQL/PostgreSQL** - Banco de dados
+- **Vite** - Build tool para assets
+- **PHPUnit** - Testes unitários
+- **Blade** - Template engine
 
-## Learning Laravel
+## 📋 Pré-requisitos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- PHP 8.1+
+- Composer
+- Node.js 16+
+- npm ou yarn
+- MySQL ou PostgreSQL
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🔧 Instalação Rápida
 
-## Laravel Sponsors
+```bash
+# Clone o repositório
+git clone https://github.com/sr-jalves/teste.learn.commit.git
+cd teste.learn.commit
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Instale dependências PHP
+composer install
 
-### Premium Partners
+# Instale dependências Node.js
+npm install
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Configure o arquivo .env
+cp .env.example .env
 
-## Contributing
+# Gere a chave da aplicação
+php artisan key:generate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Execute as migrações
+php artisan migrate
 
-## Code of Conduct
+# Compile os assets
+npm run build
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Inicie o servidor
+php artisan serve
+```
 
-## Security Vulnerabilities
+## 🚀 Desenvolvimento
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+# Inicie o servidor
+php artisan serve
 
-## License
+# Em outro terminal, compile assets em tempo real
+npm run dev
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Ou rode tudo junto com concurrently
+composer run dev
+```
+
+## 🧪 Testes
+
+```bash
+# Execute todos os testes
+php artisan test
+
+# Com cobertura de código
+php artisan test --coverage
+
+# Teste específico
+php artisan test tests/Feature/ExampleTest.php
+
+# Usando composer
+composer test
+```
+
+## 📚 Estrutura do Projeto
+
+```
+teste.learn.commit/
+├── app/
+│   ├── Models/             # Modelos Eloquent
+│   ├── Http/
+│   │   ├── Controllers/   # Controllers
+│   │   └── Requests/      # Form Requests
+│   ├── Services/           # Lógica de negócio
+│   └── ...
+├── database/
+│   ├── migrations/         # Migrações
+│   ├── seeders/            # Seeders
+│   └── factories/          # Factories
+├── resources/
+│   ├── views/              # Templates Blade
+│   ├── css/                # Estilos CSS
+│   └── js/                 # JavaScript
+├── routes/                 # Definições de rotas
+├── tests/                  # Testes unitários e feature
+├── .github/
+│   └── workflows/          # CI/CD workflows
+├── config/                 # Configurações
+├── composer.json
+├── package.json
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
+```
+
+## 🎯 Como Contribuir
+
+Veja [CONTRIBUTING.md](./CONTRIBUTING.md) para detalhes completos.
+
+**Resumido:**
+1. Crie uma branch `feature/sua-feature`
+2. Commit com mensagens claras
+3. Push e abra um Pull Request
+4. Aguarde review e merge
+
+## 🐛 Reportar Bugs
+
+Abra uma [Issue](https://github.com/sr-jalves/teste.learn.commit/issues) descrevendo:
+- Passos para reproduzir
+- Comportamento esperado vs atual
+- Environment (PHP, Laravel, OS)
+- Screenshots (se aplicável)
+
+## 📚 Documentação Adicional
+
+- [Laravel Documentation](https://laravel.com/docs)
+- [Eloquent ORM](https://laravel.com/docs/eloquent)
+- [Artisan CLI](https://laravel.com/docs/artisan)
+- [Testing](https://laravel.com/docs/testing)
+
+## 🔐 Segurança
+
+Se encontrar uma vulnerabilidade de segurança, envie um email ao invés de abrir uma issue pública.
+
+## 📄 Licença
+
+MIT License - veja [LICENSE](./LICENSE) para detalhes
+
+## 👤 Autor
+
+**sr-jalves**
+- GitHub: [@sr-jalves](https://github.com/sr-jalves)
+
+---
+
+**Dúvidas?** Abra uma [Discussion](https://github.com/sr-jalves/teste.learn.commit/discussions) ou [Issue](https://github.com/sr-jalves/teste.learn.commit/issues)! 🚀
